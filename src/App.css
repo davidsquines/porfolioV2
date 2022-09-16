@@ -1,38 +1,364 @@
 .App {
   text-align: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+}
+/*Nav Bar styles*/
+.nav-container{
+  border-bottom: solid 2px rgba(217,217,217, .5);
+  height: 90px;
+  padding: 39px;
+  position: relative;
+  z-index: 1;
+}
+.nav-container a{
+  color: white;
+  text-decoration: none;
+  margin: 0 10px 0 10px;
+  
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-container a:hover{
+  color: #F78166;
+}
+.nav-container a:after{
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  width: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.menu-bars {
+  border: 0;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: rgba(255,255,255, .8);
+  background-color: none;
+  cursor: pointer;
+  transition:  0.6s ease-in-out;
+  display: none;
+  margin-top: 10px;
+  font-size: 25px;
+
+}
+
+@media screen and (max-width: 760px){
+  .nav-container{
+    padding: 0;
+    position: sticky;
+  }
+  .menu-bars{
+    display: block;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+/*home page styling*/
+.home-wrapper{
+  width: 70%;
+  height: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  margin: auto;
+}
+.home-wrapper a{
+  text-decoration: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.home-wrapper a:hover{
+  text-decoration: underline;
+  color: #01A7FF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home-wrapper ul{
+  list-style-type: none;
+  color: #F78166;
+  padding-left:0;
+  margin-left: 0;
+}
+.home-wrapper li{
+  display: inline-block;
+  font-size: 20px;
+  margin-top: -200px;
+  color: #F78166;
+  padding-left: 5px;
+  
+}
+
+.right-column{
+  margin-top: 50px;
+}
+.left-card{
+  width: 100%;
+  background: none;
+  margin-top: 10px;
+  color: white;
+  text-align: start;
+  
+}
+.profile-pic{
+
+  background: none;
+  height: 100%;
+  width: 300px;
+}
+.file-card{
+  height: 150px;
+  position: relative;
+  text-align: left;
+  border: solid 2px rgba(217,217,217, .2);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  padding: 20px;
+  display: block;
+}
+.file-card a{
+  font-size: 20px;
+}
+.file-card p{
+  margin-top: 10px;
+  color: white;
+  opacity: .5;
+  font-size:14px;
+}
+.code-detail{
+  color:white;
+  margin-top: 10px;
+}
+.circle{
+  background: #3572A5;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+
+}
+.right-column a{
+  text-decoration: none;
+  color: #0088FF;
+}
+
+@media screen and (max-width: 760px){
+  .home-wrapper{
+    margin: 0;
+    width: 100%;
+    
   }
-  to {
-    transform: rotate(360deg);
+  .left-card{
+    text-align: center;
+    justify-content: center;
+    
   }
+  .profile-pic{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+
+/* About Page Styling */
+.content-wrapper{
+  width: 800px;
+  height: auto;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  align-items: start;
+  flex-direction: column;
+  text-align: start;
+}
+/*Global css
+  to be used in the entire app
+*/
+.return-links{
+  margin-top: 20px;
+  padding: 10px;
+  color: #01A7FF;
+  font-size: 30px;
+}
+.return-links a{
+  text-decoration: none;
+  color: #01A7FF;
+}
+.return-links a:hover{
+  text-decoration: underline;
+  color: #01A7FF;
+}
+
+.container{
+  width: auto;
+  height: auto;
+  margin-top: 20px;  
+}
+.container-header{
+  width: auto;
+  color: white;
+  background-color: #161B22;
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: solid 2px rgba(217,217,217, .2);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-evenly;
+}
+.container-header div{
+  display: flexbox;
+}
+.container-header span{
+  background-color: #161B22;
+  
+}
+.container-content{
+  width: auto;
+  color: white;
+  background-color: #0D1116;
+  text-align: start;
+  border: solid 2px rgba(217,217,217, .2);
+  padding: 10px;
+}
+
+.container-content ul{
+  background-color: #0D1116;
+  width: auto;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-content li{
+  background-color: #0D1116;
+  color: white;
+}
+.appear{
+  display: none;
+}
+.readme-content{
+  width: auto;
+  color: white;
+  background-color: #161B22;
+  text-align: center;
+  padding: 10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border: solid 2px rgba(217,217,217, .2);
+
+  justify-content: space-evenly;
+}
+.readme-content-container{
+  width: auto;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.readme-content section{
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px rgba(217,217,217, .2);
+}
+.readme-content p{
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+.readme-content-container a{
+  text-decoration: none;
+  color: white;
+}
+.readme-content-container a:hover{
+  color: #01A7FF;
+  text-decoration: underline;
+}
+
+
+
+
+/*Projects Styling*/
+.projects-row{
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: stretch;
+}
+.project-image{
+  width: 500px;
+  height: 300px;
+}
+@media screen and (max-width: 760px){
+  .content-wrapper{
+    width: 400px;
+  }
+  .container-header{
+    font-size: 16px;
+
+  }
+  .disappear{
+    display: none;
+  }
+  .appear{
+    display: inline;
+  }
+  .container-content{
+    grid-template-columns: 1fr;
+  }
+
+
+}
+
+/*Contact section*/
+.contact-form-container{
+  width: auto;
+  display: grid;
+}
+
+.contact-form-container form{
+  width: 100%;
+  max-width: 700px;
+
+
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+  color: white;
+
+}
+
+.contact-form-container input{
+  display: block;
+  width: 25vh;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+.contact-form-container textarea{
+  background-color: #eee;
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  border-radius: 5px;
+}
+.submit-button{
+  background-color:rgba(217,217,217, .2);
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  transition:  0.4s ease-in-out;
+}
+.submit-button:hover{
+  background-color: #F78166;
+
+}
+
+.social-media-row{
+  text-decoration: none;
+  color: #01A7FF;
 }
