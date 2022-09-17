@@ -167,6 +167,7 @@
   align-items: start;
   flex-direction: column;
   text-align: start;
+  margin-bottom: 50px;
 }
 /*Global css
   to be used in the entire app
