@@ -20,37 +20,37 @@ const Projects = () => {
           </div>
           <div className='container-content' onClick={() => setTabIndex(0)}>
             <div className='projects-row'>
-              <span ><FaIcons.FaFile />GotGains.md</span>
-              <span className='disappear' style= {{marginLeft:"50px"}}>A fitness application</span>
-              <span className='disappear' style= {{marginLeft:"100px"}}>May 2020</span>
+              <span ><FaIcons.FaFolder style={{color: "#8B949E"}}/> GotGains.md</span>
+              <span className='disappear' style= {{marginLeft:"50px", opacity:".5"}}>A fitness application</span>
+              <span className='disappear' style= {{marginLeft:"100px", opacity:".5"}}>May 2020</span>
             </div>
           </div>
           <div className='container-content' onClick={() => setTabIndex(1)} >
             <div className='projects-row'>
-              <span><FaIcons.FaFile /> ChorosX.md</span>
-              <span  className='disappear' style= {{marginLeft:"50px"}}>Track Satellite Positioning</span>
-              <span className='disappear' style= {{marginLeft:"100px"}}>April 2021</span>
+              <span><FaIcons.FaFolder style={{color: "#8B949E"}}/> ChorosX.md</span>
+              <span  className='disappear' style= {{marginLeft:"50px", opacity:".5"}}>Track Satellite Positioning</span>
+              <span className='disappear' style= {{marginLeft:"100px", opacity:".5"}}>April 2021</span>
             </div>
           </div>
           <div className='container-content'onClick={() => setTabIndex(2)}>
           <div className='projects-row'>
-              <span><FaIcons.FaFile /> EureQa.md</span>
-              <span className='disappear' style= {{marginLeft:"50px"}}>A Questionaire App</span>
-              <span className='disappear' style= {{marginLeft:"100px"}}>May 2021</span>
+              <span><FaIcons.FaFolder style={{color: "#8B949E"}}/> EureQa.md</span>
+              <span className='disappear' style= {{marginLeft:"50px",opacity:".5"}}>A Questionaire App</span>
+              <span className='disappear' style= {{marginLeft:"100px", opacity:".5"}}>May 2021</span>
             </div>
           </div>
           <div className='container-content'onClick={() => setTabIndex(3)}>
             <div className='projects-row'>
-              <span><FaIcons.FaFile />DictionaryAttack.md</span>
-              <span className='disappear' style= {{marginLeft:"50px"}}>A game web application</span>
-              <span className='disappear' style= {{marginLeft:"100px"}}>December 2021</span>
+              <span><FaIcons.FaFolder style={{color: "#8B949E"}}/> DictionaryAttack.md</span>
+              <span className='disappear' style= {{marginLeft:"50px", opacity:".5"}}>A game web application</span>
+              <span className='disappear' style= {{marginLeft:"100px", opacity:".5"}}>December 2021</span>
             </div>
           </div>
           <div className='container-content' onClick={() => setTabIndex(4)} style={{borderBottomLeftRadius: "20px",borderBottomRightRadius: "20px"}}>
           <div className='projects-row'>
-              <span><FaIcons.FaFile /> Eleos.md</span>
-              <span className='disappear' style= {{marginLeft:"50px"}}>Desktop Virtual Assistant</span>
-              <span className='disappear' style= {{marginLeft:"100px"}}>August 2021</span>
+              <span><FaIcons.FaFolder style={{color: "#8B949E"}}/> Eleos.md</span>
+              <span className='disappear' style= {{marginLeft:"50px", opacity:".5"}}>Desktop Virtual Assistant</span>
+              <span className='disappear' style= {{marginLeft:"100px", opacity:".5"}}>August 2021</span>
             </div>
           </div>
         </div>

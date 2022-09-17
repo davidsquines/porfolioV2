@@ -132,13 +132,7 @@
   color:white;
   margin-top: 10px;
 }
-.circle{
-  background: #3572A5;
-  border-radius: 50%;
-  height: 5px;
-  width: 5px;
 
-}
 .right-column a{
   text-decoration: none;
   color: #0088FF;
@@ -215,6 +209,7 @@
 }
 .container-header span{
   background-color: #161B22;
+
   
 }
 .container-content{
@@ -290,6 +285,7 @@
   width: 500px;
   height: 300px;
 }
+
 @media screen and (max-width: 760px){
   .content-wrapper{
     width: 400px;

@@ -18,8 +18,8 @@ const About = () => {
           <div className='container-content' style={{borderBottomLeftRadius: "20px",borderBottomRightRadius: "20px"}}>
             <div className='projects-row'>
               <span ><FaIcons.FaFile />README.md</span>
-              <span className='disappear' style= {{marginLeft:"50px"}}>Learn more about me</span>
-              <span className='disappear' style= {{marginLeft:"100px"}}>September 2022</span>
+              <span className='disappear' style= {{marginLeft:"50px",opacity:".5"}}>Learn more about me</span>
+              <span className='disappear' style= {{marginLeft:"70px",opacity:".5"}}>September 2022</span>
 
             </div>
             
