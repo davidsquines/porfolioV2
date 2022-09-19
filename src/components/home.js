@@ -21,23 +21,6 @@ const Home = () => {
 
 const LeftColumn = () => {
   return(
-    // <Card  style={{width: "100%", background: "none", marginTop: " 10px", color: "white"}} className='left-card'>
-    //   <Card.Img variant='top' src={profilePic}  style={{borderRadius: "150px"}} className = "profile-pic">
-    //   </Card.Img>
-    //   <Card.Body >
-    //     <Card.Title style={{fontSize: "25px"}}>David Quines</Card.Title>
-    //     <Card.Text style={{opacity: ".5",}}>Fullstack Engineer</Card.Text>
-    //     <Card.Text sytle={{ lineHeight: "8px"}}>Porfolio Website</Card.Text>
-    //     <Card.Text style={{borderBottom: "solid 2px rgba(217,217,217, .2)"}}><a href="mailto:davidasquines@gmail.com" ><FaIcons.FaEnvelope/> davidasquines@gmail</a></Card.Text>
-    //     <Card.Text>Social Media
-        // <ul>
-        //   <li><a className="icon" href="https://github.com/davidsquines" target="_blank" style={{color: '#F78166'}}><FaIcons.FaGithub/></a></li>
-        //   <li><a className='icon' href="https://www.linkedin.com/in/david-quines7/" target="_blank" style={{color: '#F78166'}}><FaIcons.FaLinkedin/></a></li>
-        //   <li><a className='icon' href="https://www.instagram.com/dsqsfl/" target="_blank" style={{color: '#F78166'}}><FaIcons.FaInstagram/></a></li>
-        // </ul>
-    //     </Card.Text>
-    //   </Card.Body>
-    // </Card>
     <div className='left-card'>
       <div className='row-content'>
           <img className='profile-pic' src={profilePic}/>
