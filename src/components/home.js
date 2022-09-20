@@ -31,7 +31,7 @@ const LeftColumn = () => {
       </div>
       <div className='left-card-content'>
         <div style={{borderBottom: "solid 2px rgba(217,217,217, .2)", paddingBottom:"20px"}}>
-          <h3>Porfolio Website</h3>
+          <h3>Portfolio Website</h3>
           <a href="mailto:davidasquines@gmail.com" ><FaIcons.FaEnvelope/> davidasquines@gmail</a>
         </div>
         <div className='social-media-container'>
